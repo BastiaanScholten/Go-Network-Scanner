@@ -16,7 +16,7 @@ func main() {
 	target := flag.String("target", "", "The target IP address, Domain, or CIDR block (e.g., \"192.168.1.1\", \"example.com\", or \"10.0.0.0/24\")")
 	port := flag.String("port", "", "The port or port range to scan (e.g., 80, 443, or \"1-65535\")")
 	workers := flag.Int("workers", 50, "Number of concurrent workers")
-	timeout := flag.Duration("timeout", 100*time.Millisecond, "Max time to wait for a response per port (e.g., '500ms' or '1s')")
+	timeout := flag.Duration("timeout", 250*time.Millisecond, "Max time to wait for a response per port (e.g., '500ms' or '1s')")
 	verbose := flag.Bool("v", false, "Enable verbose mode to see every connection attempt (e.g., true or false)")
 	outputFile := flag.String("o", "", "Save the results to a file (e.g., 'results.txt' or 'output.cvs')")
 
