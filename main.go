@@ -18,7 +18,7 @@ func main() {
 	workers := flag.Int("workers", 50, "Number of concurrent workers")
 	timeout := flag.Duration("timeout", 250*time.Millisecond, "Max time to wait for a response per port (e.g., '500ms' or '1s')")
 	verbose := flag.Bool("v", false, "Enable verbose mode to see every connection attempt (e.g., true or false)")
-	outputFile := flag.String("o", "", "Save the results to a file (e.g., 'results.txt' or 'output.cvs')")
+	outputFile := flag.String("o", "", "Save the results to a file (e.g., 'results.txt' or 'output.csv')")
 
 	// Parsing all flags
 	flag.Parse()
